@@ -8,7 +8,8 @@ function ItemCardPortfolio() {
         return (
           <div key={id} className="flexbox__item">
             <a href={linksource} target="_blank" rel="noreferrer">
-              <img
+              <div style={{display: "block", aspectRatio: 7/4}} >
+                  <img
                 className="item__image"
                 src={src}
                 alt={alt}
@@ -16,6 +17,9 @@ function ItemCardPortfolio() {
                 height="200"
                 loading="lazy"
               />
+              </div>
+              
+          
             </a>
             <div className="item-text-box">
               <h3>{heading}</h3>

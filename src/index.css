@@ -185,6 +185,7 @@ button {
   max-width: 350px;
   max-height: 200px;
   border-radius: 2rem 2rem 0 0;
+  aspect-ratio: 128/73;
 }
 
 .item__image:hover {
@@ -302,6 +303,7 @@ button {
 
 .home__blob-img {
   width: 170px;
+  aspect-ratio: 1/1;
 }
 
 .home__data {
