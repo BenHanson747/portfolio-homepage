@@ -18,12 +18,17 @@ function ItemCardPortfolio() {
                 loading="lazy"
               />
               </div>
-              
-          
             </a>
             <div className="item-text-box">
               <h3>{heading}</h3>
-              <p>{text}</p>
+              <p className="padding__bottom">{text}</p>
+              <a
+                  href={linksource}
+                  className="button button--flex"
+                  target="_blank"
+                  rel="noreferrer">
+                      View Project
+              </a>
             </div>
           </div>
         );

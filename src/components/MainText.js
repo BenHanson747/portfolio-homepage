@@ -15,7 +15,6 @@ function MainText() {
         rel="noreferrer"
       >
         Contact Me Now!
-        <div className="button__icon"></div>
       </a>
     </div>
   );

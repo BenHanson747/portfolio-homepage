@@ -1,22 +1,23 @@
 const ClientData = [
-  // {
-  //   id: 1,
-  //   src: "./assets/whittard.png",
-  //   alt: "Whittard of Chelsea logo",
-  //   heading: "Whittard of Chelsea",
-  //   startDate: new Date("2021-10-25"),
-  //   endDate: new Date("2022-09-25"),
-  //   responsibilities: ["another test","double test"],
-  //   technologies: ["Test1", "Test2"],
-  // },
+  {
+    id: 1,
+    src: "./assets/BMI-logo.png",
+    alt: "BMI Group logo",
+    heading: "BMI Group",
+    startDate: new Date("2022-09-26"),
+    endDate: new Date(),
+    responsibilities: ["Assiting senior developers in code creation", "Refactoring code and implementing new features"],
+    technologies: ["GatsbyJS", "GitLab","React","SCSS","Typescript","Contentful CMS"],
+  },
+
   {
     id: 2,
     src: "./assets/whittard.png",
     alt: "Whittard of Chelsea logo",
     heading: "Whittard of Chelsea",
     startDate: new Date("2021-10-25"),
-    endDate: new Date("2022-09-25"),
-    responsibilities: ["Technical implementation of marketing assets", "Core Web Vital improvment", "Migration "],
+    endDate: new Date("2022-09-23"),
+    responsibilities: ["Technical implementation of marketing assets", "Core Web Vital improvment", "Implemented TailwindCSS"],
     technologies: ["HTML", "CSS3/TailwindCSS","Javascript","GitHub","Salesforce eCommerce Cloud"],
   },
 ];
