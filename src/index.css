@@ -250,6 +250,8 @@ button {
 .nav__icon {
   height: 25px;
   width: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav__close {
