@@ -1,4 +1,4 @@
-import NavListData from "./NavListData";
+import NavListData from "./data/NavListData";
 
 function NavListItem() {
   return (
