@@ -3,8 +3,7 @@ import PortfolioData from "./data/PortfolioData";
 function ItemCardPortfolio() {
   return (
     <>
-      {PortfolioData.map((PortfolioData) => {
-        const { id, src, alt, linksource, heading, text } = PortfolioData;
+      {PortfolioData.map(({ id, src, alt, linksource, heading, text }) => {
         return (
           <div key={id} className="flexbox__item">
             <a href={linksource} target="_blank" rel="noreferrer">
