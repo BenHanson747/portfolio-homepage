@@ -1,6 +1,6 @@
 import React from "react";
 
-type ClientCardTextProps = {
+export type ClientCardTextProps = {
   text: string[];
   title: "Responsibilities" | "Technologies";
 }
