@@ -2,10 +2,12 @@ import { FiMoon, FiSun } from "react-icons/fi";
 import { useState, useEffect } from "react";
 
 function NavTheme() {
-  const [darkTheme, setDarkTheme] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(() =>JSON.parse(localStorage.getItem("darkTheme") || false));
 
   const toggleTheme = () => {
-    setDarkTheme(!darkTheme);
+    const newTheme = !darkTheme;
+    setDarkTheme(newTheme);
+    localStorage.setItem("darkTheme", JSON.stringify(newTheme));
   };
 
   useEffect(() => {
