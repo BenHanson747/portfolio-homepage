@@ -1,11 +1,12 @@
-import { PortfolioData } from "../types/types";
+import { PortfolioDataType } from "../types/types";
 
-const PortfolioData: PortfolioData[] = [
+const PortfolioData: PortfolioDataType[] = [
   {
     id: 1,
     src: "./assets/digital-clock.png",
     alt: "go to Digital Clock app",
-    linksource: "https://calm-basbousa-d80a2f.netlify.app/",
+    projectLink: "https://calm-basbousa-d80a2f.netlify.app/",
+    codeLink: "https://github.com/BenHanson747/responsive-clock",
     heading: "Digital Clock App",
     text: "Built using React.js & CSS3",
   },
@@ -13,7 +14,8 @@ const PortfolioData: PortfolioData[] = [
     id: 2,
     src: "./assets/battery-indicator.png",
     alt: "go to Battery Level Indicator app",
-    linksource: "https://main--merry-florentine-ba22cd.netlify.app/",
+    projectLink: "https://main--merry-florentine-ba22cd.netlify.app/",
+    codeLink: "https://github.com/BenHanson747/battery-level-indicator",
     heading: "Battery Level Indicator App",
     text: "Built using React.js & CSS3",
   },

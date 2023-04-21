@@ -1,8 +1,8 @@
 import { FaHome, FaBriefcase } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import {NavListData} from "../types/types";
+import {NavListDataType} from "../types/types";
 
-const NavListData: NavListData[] = [
+const NavListData: NavListDataType[] = [
   { id: 1, itemName: "Home", icon: FaHome, navLink: "#home" },
   {
     id: 2,

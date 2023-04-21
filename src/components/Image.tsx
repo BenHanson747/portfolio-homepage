@@ -6,7 +6,6 @@ type ImageProps = {
 };
 
 const Image = ({src, altText}: ImageProps) => {
-
   return  <img
     className="item__image"
     src={src}

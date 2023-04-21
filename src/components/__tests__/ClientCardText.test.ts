@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import ClientCardText, { ClientCardTextProps } from "./ClientCardText";
+import ClientCardText, { ClientCardTextProps } from "../ClientCardText";
 
 describe("ClientCardText", () => {
   const testProps: ClientCardTextProps = {
@@ -9,7 +9,7 @@ describe("ClientCardText", () => {
   };
 
   it("renders the title correctly", () => {
-    const { getByText } = render(<ClientCardText {...testProps} />);
+    const { getByText } = render(<ClientCardText title={testProps.title} />);
     const titleElement = getByText(testProps.title);
     expect(titleElement).toBeInTheDocument();
   });

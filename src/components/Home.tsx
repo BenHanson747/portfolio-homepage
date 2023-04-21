@@ -1,6 +1,7 @@
 import SocialLinks from "./SocialLinks";
 import HeroImage from "./HeroImage";
 import MainText from "./MainText";
+import CountUpTimer from "./CountUpTimer";
 import React from "react";
 
 function Home() {

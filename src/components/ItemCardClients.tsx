@@ -1,7 +1,8 @@
 import ClientData from "./data/ClientData";
-import { ClientData as ClientDataProps } from "./types/types";
+import { ClientDataType as ClientDataProps } from "./types/types";
 import ClientCardText from "./ClientCardText";
 import React, { lazy, Suspense } from "react";
+import CurrentEmployerFlag from "./CurrentEmployerFlag";
 
 const calculateTenureDates = (startDate: Date, endDate: Date) => {
   return `${startDate.toLocaleString("default", {
@@ -32,6 +33,7 @@ const ClientCard = ({
   endDate,
   responsibilities,
   technologies,
+  currentEmployer,
 }: ClientDataProps) => {
   return (
     <div key={id} className="flexbox__item">
@@ -41,7 +43,7 @@ const ClientCard = ({
       <div className="item-text-box">
         <h3>{heading}</h3>
         <p>{calculateTenureDates(startDate, endDate)}</p>
-        <p>{calculateTenureDifference(startDate, endDate)}</p>
+        <p>{calculateTenureDifference(startDate, endDate)}<CurrentEmployerFlag currentEmployer={currentEmployer}/></p>
         <ClientCardText text={responsibilities} title="Responsibilities" />
         <ClientCardText text={technologies} title="Technologies" />
       </div>

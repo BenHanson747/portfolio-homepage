@@ -1,6 +1,6 @@
-import { ClientData } from "../types/types";
+import { ClientDataType } from "../types/types";
 
-const ClientData: ClientData[] = [
+const ClientData: ClientDataType[] = [
   {
     id: 1,
     src: "./assets/BMI-logo.png",
@@ -10,6 +10,7 @@ const ClientData: ClientData[] = [
     endDate: new Date(),
     responsibilities: ["Assiting senior developers in code creation", "Refactoring code and implementing new features"],
     technologies: ["GatsbyJS", "GitLab","React","SCSS","Typescript","Contentful CMS"],
+    currentEmployer: true
   },
 
   {
@@ -21,6 +22,7 @@ const ClientData: ClientData[] = [
     endDate: new Date("2022-09-23"),
     responsibilities: ["Technical implementation of marketing assets", "Core Web Vital improvment", "Implemented TailwindCSS"],
     technologies: ["HTML", "CSS3/TailwindCSS","Javascript","GitHub","Salesforce eCommerce Cloud"],
+    currentEmployer: false
   },
 ];
 
