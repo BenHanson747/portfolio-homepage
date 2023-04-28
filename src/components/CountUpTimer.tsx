@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ClientData from "./data/ClientData";
 import { ClientDataType } from "./types/types";
+import { SectionContainer } from "./styles/SectionContainer";
+import { SectionTitle } from "./styles/SectionTitle";
 
 const startDate = ClientData.reduce((earliest: ClientDataType | null, current) => {
   if (!earliest || new Date(current.startDate) < new Date(earliest.startDate)) {
@@ -34,25 +36,23 @@ const CountUpTimer = () => {
         return {
           years: newYears,   
           days: newDays,
-          hours: newHours % 24, // Keep the hours less than 24
-          minutes: newMinutes % 60, // Keep the minutes less than 60
-          seconds: newSeconds % 60, // Keep the seconds less than 60
+          hours: newHours % 24,
+          minutes: newMinutes % 60, 
+          seconds: newSeconds % 60, 
         };
       });
-    }, 1000); // Update every second
+    }, 1000); 
 
-    // Clean up the interval on component unmount
     return () => clearInterval(interval);
-  }, []); // Run only once on mount
+  }, []); 
 
 
   return (
     <>
-    <div className="section"> 
-        <h3 className="section__title">Coding professionally for:</h3>
+   <SectionContainer>
+      <SectionTitle>Coding Professionaly for:</SectionTitle>
          <p>{timeElapsed.years} year {timeElapsed.days} days {timeElapsed.hours} hours {timeElapsed.minutes}m {timeElapsed.seconds}s and counting!</p>
-    </div>
-     
+    </SectionContainer>
     </>
   );
 };

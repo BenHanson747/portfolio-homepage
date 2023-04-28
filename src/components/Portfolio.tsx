@@ -1,15 +1,18 @@
 import ItemCardPortfolio from "./ItemCardPortfolio";
 import React from "react";
+import { SectionContainer } from "./styles/SectionContainer";
+import { SectionTitle } from "./styles/SectionTitle";
+import { SectionSubTitle } from "./styles/SectionSubtitle";
 
 function Portfolio() {
   return (
-    <section className="section" id="portfolio">
-      <h2 className="section__title">Portfolio</h2>
-      <span className="section__subtitle">My recent work</span>
+   <SectionContainer id="portfolio">
+     <SectionTitle>Portfolio</SectionTitle>
+      <SectionSubTitle>My recent work</SectionSubTitle>
       <div className="flexbox-container">
         <ItemCardPortfolio />
       </div>
-    </section>
+    </SectionContainer>
   );
 }
 

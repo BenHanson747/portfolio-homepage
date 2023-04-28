@@ -1,8 +1,10 @@
-import React from "react";
+import React from 'react';
 import Button from "./Button";
 
 
 function MainText () {
+
+
   return (
     <div className="home__data">
       <h1 className="home__title">Hi, I'm Ben Hanson</h1>

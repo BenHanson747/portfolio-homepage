@@ -33,9 +33,9 @@ const ScrollUpButton = styled.a`
 function ScrollUp () {
 
 const [scrollUp, setScrollUp] = useState(false);
-
+    
 useEffect(() => {
-  window.addEventListener("scroll", () =>{
+  window.addEventListener("scroll", () => {
       setScrollUp(window.scrollY >= 350);
   });
 }, [])
