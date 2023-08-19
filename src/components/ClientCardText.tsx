@@ -5,7 +5,7 @@ export type ClientCardTextProps = {
   title: "Responsibilities" | "Technologies";
 }
 
-function ClientCardText({ text, title }: ClientCardTextProps) {
+const ClientCardText = ({ text, title }: ClientCardTextProps) => {
   const listItems = text.map((items, index) => <li key={index}>{items}</li>);
   return (
     <>
