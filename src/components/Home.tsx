@@ -1,13 +1,13 @@
 import SocialLinks from "./SocialLinks";
 import HeroImage from "./HeroImage";
 import MainText from "./MainText";
-import { SectionContainer } from "./styles/SectionContainer";
+// import CountUpTimer from "./CountUpTimer";
 import React from "react";
 
 function Home() {
   return (
     <main className="main">
-      <SectionContainer id="home">
+      <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__content grid">
             <SocialLinks />
@@ -15,7 +15,7 @@ function Home() {
             <MainText />
           </div>
         </div>
-      </SectionContainer>
+      </section>
     </main>
   );
 }

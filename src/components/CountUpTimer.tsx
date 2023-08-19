@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ClientData from "./data/ClientData";
 import { ClientDataType } from "./types/types";
-import { SectionContainer } from "./styles/SectionContainer";
-import { SectionTitle } from "./styles/SectionTitle";
 
 const startDate = ClientData.reduce((earliest: ClientDataType | null, current) => {
   if (!earliest || new Date(current.startDate) < new Date(earliest.startDate)) {
@@ -49,10 +47,10 @@ const CountUpTimer = () => {
 
   return (
     <>
-   <SectionContainer>
-      <SectionTitle>Coding Professionaly for:</SectionTitle>
-         <p>{timeElapsed.years} year {timeElapsed.days} days {timeElapsed.hours} hours {timeElapsed.minutes}m {timeElapsed.seconds}s and counting!</p>
-    </SectionContainer>
+     <div className="section"> 
+        <h3 className="section__title">Coding professionally for:</h3>
+         <p className="countUpTimer">{timeElapsed.years} year {timeElapsed.days} days {timeElapsed.hours} hours {timeElapsed.minutes}m {timeElapsed.seconds}s and counting!</p>
+    </div>
     </>
   );
 };

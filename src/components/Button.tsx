@@ -1,5 +1,4 @@
 import React from "react";
-import {StyledPrimaryButton} from "../components/styles/Button";
 
 
 type ButtonProps = {
@@ -9,13 +8,14 @@ type ButtonProps = {
 
 const PrimaryButton = ({ link, text }: ButtonProps) => {
  return (
-    <StyledPrimaryButton
+    <a
         href={link}
         target="_blank"
         rel="noreferrer"
+        className="button button--flex"
     >
         {text}
-    </StyledPrimaryButton>
+    </a>
   ) 
 };
 

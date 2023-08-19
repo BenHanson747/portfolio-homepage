@@ -15,10 +15,10 @@ const FlexBoxContainer = styled.div`
   *:nth-child(2) {
     margin-left: 1rem;
 
-`;
+`;  
 
 
-function ItemCardPortfolio() {
+const ItemCardPortfolio = () => {
   return (
     <>
       {PortfolioData.map(({ id, src, alt, projectLink, codeLink, heading, text }) => {

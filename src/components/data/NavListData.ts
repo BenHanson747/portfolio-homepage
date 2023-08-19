@@ -13,4 +13,7 @@ const NavListData: NavListDataType[] = [
   { id: 3, itemName: "Clients", icon: FaBriefcase, navLink: "#clients" },
 ];
 
+export const linkedinURL = "https://www.linkedin.com/in/ben-hanson-87242937/";
+export const gitHubURL = "https://github.com/BenHanson747"
+
 export default NavListData;
