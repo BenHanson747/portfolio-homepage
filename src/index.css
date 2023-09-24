@@ -176,6 +176,19 @@ img {
 
 }
 
+.flexBoxContainer {
+display: flex;
+justify-content: flex-start;
+
+*:first-child {
+  align-self: flex-start;
+}
+
+*:nth-child(2) {
+  margin-left: 1rem;
+}
+}
+
 .flexbox__item {
   position: relative;
   max-width: 350px;
@@ -215,6 +228,34 @@ img {
   width: 25px;
   height: 25px;
 }
+
+.scrollUpButton {
+position: fixed;
+right: 1rem;
+bottom: -30%;
+background-color: var(--container-color);
+box-shadow: 0 4px 12px hsla(0, 0%, 20%, 0.1);
+border-radius: 0.5rem;
+display: inline-flex;
+padding: 0.25rem;
+z-index: var(--z-tooltip);
+opacity: 0.8;
+transition: 0.4s;
+}
+
+.scrollUpButton:hover {
+    opacity: 1;
+  }
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.show-scroll {
+    bottom: 3.5rem;
+}
+
 
 @media screen and (max-width: 767px) {
   .nav__menu {

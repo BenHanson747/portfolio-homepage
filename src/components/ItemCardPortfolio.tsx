@@ -2,20 +2,6 @@ import PortfolioData from "./data/PortfolioData";
 import Image from "./Image";
 import Button from "./Button";
 import React from "react";
-import styled from "styled-components";
-
-const FlexBoxContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
-
-  &*:first-child {
-    align-self: flex-start;
-  }
-
-  *:nth-child(2) {
-    margin-left: 1rem;
-
-`;  
 
 
 const ItemCardPortfolio = () => {
@@ -30,10 +16,10 @@ const ItemCardPortfolio = () => {
             <div className="item-text-box">
               <h3>{heading}</h3>
               <p className="padding__bottom">{text}</p>
-              <FlexBoxContainer>          
+              <div className="flexBoxContainer">          
                 <Button link={projectLink} text="View Project" />
                 <Button link={codeLink} text="View Code" />
-              </FlexBoxContainer>
+              </div>
             </div>
           </div>
         );
