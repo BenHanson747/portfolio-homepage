@@ -12,7 +12,7 @@ useEffect(() => {
 }, [])
 
     return(
-    <a href="#"  className={scrollUp ? "scrollup scrollUpButton show-scroll" : "scrollup scrollUpButton"}>
+    <a href="#home"  className={scrollUp ? "scrollup scrollUpButton show-scroll" : "scrollup scrollUpButton"}>
         <BsFillArrowUpSquareFill className='scrollup__icon'/>
     </a>
     );  
