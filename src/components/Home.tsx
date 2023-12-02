@@ -10,7 +10,10 @@ function Home() {
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__content grid">
-            <SocialLinks />
+            <SocialLinks
+              ContainerClassName="home__social"
+              AnchorLinkClassName="social-icon-home"
+            />
             <HeroImage />
             <MainText />
           </div>

@@ -27,4 +27,3 @@ const ClientData: ClientDataType[] = [
 ];
 
 export default ClientData;
-    // text: "A premium hot beveragx  e retailer, based in Oxfordshire, I was responsible for the technical implementation of marketing assets, new features and core web vital improvements. I Optimised code for performance, improving the Lighthouse performance score from 16 to 48 within a six month period. Improved the average page load speed from 18 seconds to 8, which resulted in a 10% reduction in the average user bounce rate over a six month period.",

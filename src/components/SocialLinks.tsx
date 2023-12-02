@@ -1,15 +1,46 @@
-import { FiLinkedin, FiGithub } from "react-icons/fi";
 import React from "react";
-import { linkedinURL, gitHubURL } from "./data/NavListData";
-import SocialMediaLink from "./SocialMediaLink";
+import { SocialMediaData } from "./data/SocialMediaData";
 
-function SocialLinks() {
+type SocialMediaLinkProps = {
+  link: string;
+  icon: JSX.Element;
+  className: string;
+};
+
+type SocialLinksProps = {
+  ContainerClassName: string;
+  AnchorLinkClassName: string;
+};
+
+const SocialMediaLink = ({ link, icon, className }: SocialMediaLinkProps) => {
   return (
-    <div className="home__social">
-      <SocialMediaLink link={linkedinURL} icon={<FiLinkedin/>}/>
-      <SocialMediaLink link={gitHubURL} icon={<FiGithub />}/>
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer noopener"
+      className={className}
+    >
+      {icon}
+    </a>
+  );
+};
+
+const SocialLinks = ({
+  ContainerClassName,
+  AnchorLinkClassName,
+}: SocialLinksProps) => {
+  return (
+    <div className={ContainerClassName}>
+      {SocialMediaData.map(({ id, url, icon }) => (
+        <SocialMediaLink
+          key={id}
+          link={url}
+          icon={icon}
+          className={AnchorLinkClassName}
+        />
+      ))}
     </div>
   );
-}
+};
 
 export default SocialLinks;

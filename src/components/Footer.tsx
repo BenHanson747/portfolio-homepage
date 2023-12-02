@@ -1,8 +1,6 @@
 import FooterListItem from "./FooterListItem";
 import React from "react";
-import SocialMediaLink from "./SocialMediaLink";
-import { FiLinkedin, FiGithub } from "react-icons/fi";
-import { linkedinURL, gitHubURL } from "./data/NavListData";
+import SocialLinks from "./SocialLinks";
 
 function Footer() {
   return (
@@ -14,10 +12,10 @@ function Footer() {
             <span className="footer__subtitle">React Developer</span>
           </div>
           <FooterListItem />
-          <div className="footer__socials">
-            <SocialMediaLink link={linkedinURL} icon={<FiLinkedin />} className={"footer__links"}/>
-            <SocialMediaLink link={gitHubURL} icon={<FiGithub />} className={"footer__links"}/> 
-          </div>
+          <SocialLinks
+            ContainerClassName="footer__socials"
+            AnchorLinkClassName="social-icon-footer"
+          />
         </div>
         <p className="footer__copy">&#169; Ben Hanson. All rights reserved</p>
       </div>

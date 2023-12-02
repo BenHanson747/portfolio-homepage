@@ -1,6 +1,13 @@
 import { FaHome, FaBriefcase } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import {NavListDataType} from "../types/types";
+import type { IconType } from "react-icons";
+
+export type NavListDataType = {
+  id: number;
+  itemName: string;
+  icon: IconType;
+  navLink: string;
+};
 
 const NavListData: NavListDataType[] = [
   { id: 1, itemName: "Home", icon: FaHome, navLink: "#home" },
@@ -13,7 +20,5 @@ const NavListData: NavListDataType[] = [
   { id: 3, itemName: "Clients", icon: FaBriefcase, navLink: "#clients" },
 ];
 
-export const linkedinURL = "https://www.linkedin.com/in/ben-hanson-87242937/";
-export const gitHubURL = "https://github.com/BenHanson747"
 
 export default NavListData;

@@ -224,16 +224,11 @@ justify-content: flex-start;
   padding: 1rem 1rem 2rem 1rem;
 }
 
-.footer__social-icon {
-  width: 25px;
-  height: 25px;
-}
-
 .scrollUpButton {
 position: fixed;
 right: 1rem;
 bottom: -30%;
-background-color: var(--container-color);
+background-color: white;
 box-shadow: 0 4px 12px hsla(0, 0%, 20%, 0.1);
 border-radius: 0.5rem;
 display: inline-flex;
@@ -314,10 +309,14 @@ transition: 0.4s;
 }
 
 .nav__icon {
-  height: 25px;
-  width: 25px;
   display: flex;
   justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.nav__icon svg {
+  height: 20px;
+  width: 20px;
 }
 
 .nav__close {
@@ -351,18 +350,32 @@ transition: 0.4s;
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
+  color: var(--title-color);
 }
 
-.home__social-icon {
+/* Needed */
+.social-icon-home {
   font-size: 1.25rem;
   color: var(--first-color);
-  padding: 0.3rem;
+  padding: 0.5rem;
+  display: flex;
 }
 
-.home__social-icon:hover {
-  color: #fff;
+/* Needed */
+.social-icon-footer {
+  font-size: 1.25rem;
+  color: #fff; 
+  padding: 0.5rem;
+  display: flex;
+}
+
+/* Needed */
+.social-icon-home:hover,
+.social-icon-footer:hover
+ {
+  color: #fff;  
   background-color: var(--first-color-lighter);
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   transition: 0.3s;
 }
 
@@ -498,7 +511,7 @@ transition: 0.4s;
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
   display: flex;
-  gap: 1rem
+  gap: 1rem;
 }
 
 .footer__socials:hover {
